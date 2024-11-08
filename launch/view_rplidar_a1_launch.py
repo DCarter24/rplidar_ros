@@ -84,8 +84,8 @@ def generate_launch_description():
 	    # Object detection and maneuvering node
         Node(
             package='rplidar_ros',  # actual package name
-            executable='object_maneuver', 
-            name='object_maneuver',
+            executable='lidar_object_detection', 
+            name='lidar_object_detection',
             output='screen'
         ),
     ])
