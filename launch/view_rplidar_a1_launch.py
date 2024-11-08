@@ -81,5 +81,12 @@ def generate_launch_description():
             name='rviz2',
             arguments=['-d', rviz_config_dir],
             output='screen'),
+	    # Object detection and maneuvering node
+        Node(
+            package='rplidar_ros',  # actual package name
+            executable='object_maneuver', 
+            name='object_maneuver',
+            output='screen'
+        ),
     ])
 
