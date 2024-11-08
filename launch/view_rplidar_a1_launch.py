@@ -88,5 +88,12 @@ def generate_launch_description():
             name='lidar_object_detection',
             output='screen'
         ),
+	    # Steering Control Node (Servo)
+        Node(
+            package='rplidar_ros',  
+            executable='steering_control',  # Executable name for the steering control node
+            name='steering_control',
+            output='screen'
+        ),
     ])
 
